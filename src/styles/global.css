@@ -1,0 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Prevents blue highlight color of elements when tapped on phones */
+* {
+  -webkit-tap-highlight-color: transparent;
+}
