@@ -32,7 +32,10 @@ const Login: NextPage = () => {
   return (
     <Container component="main" maxWidth="xs">
       <Box className="mt-10 flex flex-col items-center">
-        <Avatar sx={{ m: 1, bgcolor: 'secondary.main' }}>
+        <Avatar
+          sx={{ m: 1, bgcolor: 'secondary.main' }}
+          className={'bg-amber-600'}
+        >
           <LockOutlinedIcon />
         </Avatar>
         <Typography component="h1" variant="h5">
@@ -60,12 +63,20 @@ const Login: NextPage = () => {
             autoComplete="current-password"
           />
           <FormControlLabel
-            control={<Checkbox value="remember" color="primary" />}
+            control={
+              <Checkbox
+                className={'text-red-300'}
+                value="remember"
+                color="primary"
+              />
+            }
             label="Remember me"
           />
+          <div className={'bg-violet-300'}>test</div>
           <Button
             type="submit"
             fullWidth
+            className={'bg-amber-500 hover:bg-amber-300'}
             variant="contained"
             sx={{ mt: 3, mb: 2 }}
           >

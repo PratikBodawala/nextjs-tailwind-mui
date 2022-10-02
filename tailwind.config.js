@@ -2,9 +2,9 @@
 
 module.exports = {
   content: [
-    "./src/pages/*.{js,ts,jsx,tsx}",
-    "./src/page-components/**/*.{js,ts,jsx,tsx}",
-    "./src/components/**/*.{js,ts,jsx,tsx}"
+    './src/pages/*.{js,ts,jsx,tsx}',
+    './src/page-components/**/*.{js,ts,jsx,tsx}',
+    './src/components/**/*.{js,ts,jsx,tsx}',
   ],
   important: '#__next',
   theme: {
@@ -14,5 +14,5 @@ module.exports = {
     // Remove Tailwind CSS's preflight style so it can use the MUI's preflight instead (CssBaseline).
     preflight: false,
   },
-  plugins: [],
+  plugins: [{}],
 };
