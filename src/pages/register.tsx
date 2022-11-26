@@ -4,7 +4,6 @@ import {
   Avatar,
   Typography,
   Grid,
-  TextField,
   FormControlLabel,
   Checkbox,
   Button,
@@ -12,7 +11,7 @@ import {
 import { NextPage } from 'next';
 import LockOutlinedIcon from '@mui/icons-material/LockOutlined';
 
-import { Link } from '../components/link';
+import Link  from '@mui/material/Link';
 import { Copyright } from '../components/copyright';
 
 const Register: NextPage = () => {
@@ -37,42 +36,39 @@ const Register: NextPage = () => {
         <Box component="form" noValidate onSubmit={handleSubmit} sx={{ mt: 3 }}>
           <Grid container spacing={2}>
             <Grid item xs={12} sm={6}>
-              <TextField
+              <input
                 autoComplete="given-name"
                 name="firstName"
                 required
-                fullWidth
+                className={'w-full'}
                 id="firstName"
-                label="First Name"
+                aria-label="First Name"
                 autoFocus
               />
             </Grid>
             <Grid item xs={12} sm={6}>
-              <TextField
+              <input
                 required
-                fullWidth
                 id="lastName"
-                label="Last Name"
+                aria-label="Last Name"
                 name="lastName"
                 autoComplete="family-name"
               />
             </Grid>
             <Grid item xs={12}>
-              <TextField
+              <input
                 required
-                fullWidth
                 id="email"
-                label="Email Address"
+                aria-label="Email Address"
                 name="email"
                 autoComplete="email"
               />
             </Grid>
             <Grid item xs={12}>
-              <TextField
+              <input
                 required
-                fullWidth
                 name="password"
-                label="Password"
+                aria-label="Password"
                 type="password"
                 id="password"
                 autoComplete="new-password"

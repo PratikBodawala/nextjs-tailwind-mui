@@ -1,7 +1,8 @@
+import '/src/MuiClassNameSetup'
 import Container from '@mui/material/Container';
 
 import type { NextPage } from 'next';
-import Link from '../components/link/Link';
+import Link from 'next/link';
 
 const Home: NextPage = () => {
   return (

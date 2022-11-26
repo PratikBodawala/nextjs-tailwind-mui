@@ -1,7 +1,6 @@
 import * as React from 'react';
 import Avatar from '@mui/material/Avatar';
 import Button from '@mui/material/Button';
-import TextField from '@mui/material/TextField';
 import FormControlLabel from '@mui/material/FormControlLabel';
 import Checkbox from '@mui/material/Checkbox';
 import Grid from '@mui/material/Grid';
@@ -12,8 +11,9 @@ import Container from '@mui/material/Container';
 import { NextPage } from 'next';
 import { useRouter } from 'next/router';
 
-import { Link } from '../components/link';
 import { Copyright } from '../components/copyright';
+import Link from "@mui/material/Link";
+
 
 const Login: NextPage = () => {
   const router = useRouter();
@@ -42,22 +42,20 @@ const Login: NextPage = () => {
           Sign in
         </Typography>
         <Box component="form" onSubmit={handleSubmit} noValidate sx={{ mt: 1 }}>
-          <TextField
-            margin="normal"
+          <input
+            className={'m-2 w-full'}
             required
-            fullWidth
             id="email"
-            label="Email Address"
+            aria-label="Email Address"
             name="email"
             autoComplete="email"
             autoFocus
           />
-          <TextField
-            margin="normal"
+          <input
+            className={'m-2 w-full'}
             required
-            fullWidth
             name="password"
-            label="Password"
+            aria-label="Password"
             type="password"
             id="password"
             autoComplete="current-password"
