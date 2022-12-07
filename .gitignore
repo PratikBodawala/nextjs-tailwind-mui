@@ -37,3 +37,4 @@ yarn-error.log*
 *.tsbuildinfo
 .nvmrc
 .idea
+/.vscode/settings.json
